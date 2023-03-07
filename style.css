@@ -1,0 +1,48 @@
+#flexbox1 {
+    display: flex;
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#flexbox1 > div {
+    height: 150px;
+    margin: 10px;
+    border-radius: 8%;
+    background-color: rgb(112, 112, 250);
+    background-image: url("placeholder-image.png");
+    background-size: 150px 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    width: 16%;
+}
+
+p {
+    transform: translateY(117px);
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    #flexbox1 > div {width: 16%;
+    }
+        
+}
+
+@media screen and (max-width: 768px) {
+    #flexbox1 > div {width: 30%;
+    }   
+    }
+
+@media screen and (max-width: 414px) {
+        #flexbox1 > div {width: 100%;
+        }   
+        }
